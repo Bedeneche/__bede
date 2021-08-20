@@ -1,0 +1,182 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bede Resumè</title>
+    <link rel="shortcut icon" href="{% static 'img/favicon-16x1.png' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lato:ital,wght@0,100;1,100&family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+  </head>
+  <body>
+    <main>
+      <!-- ***********************  ABOUT / PROFILE  *********************** -->
+      <header>
+        <div class="content-wrap">
+          <h1>Chukwude Bede Chinecherem</h1>
+          <h2>Hng Intern & FrontEnd Devloper</h2>
+          <img class="card" src="{% static 'img/apple-touch-icon.png' %}">
+
+<!--           <p>Add your profile copy here. Add more paragraphs or links as needed. Here is some dummy text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.</p>
+          <p>Add another paragraph if needed.</p> -->
+        </div>
+      </header>
+
+      <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+      <section class="edu">
+        <div class="content-wrap item-details">
+          <h2>Education</h2>
+
+          
+          <section>
+            <h3>University of Nigeria - Nsukka</h3>
+            <p>B.Tech in Computer and Robotics Education, 2016-2020</p>
+            <!-- <p>Summary or accomplishments.</p> -->
+          </section>
+          <section>
+            <h3>St. Theresa Scondary School Mmaku </h3>
+            <p>NECO & WAEC, 2006-2012</p>
+            <!-- <p>Summary or accomplishments.</p> -->
+          </section>
+          <section>
+            <h3>St Norbert international School Mgbowo </h3>
+            <p>First School Leaving Certificate (FSLC), 2000-2006</p>
+            <!-- <p>Summary or accomplishments.</p> -->
+          </section>
+          <!-- End of School block. -->
+        </div>
+      </section>
+
+  
+  <!-- ********************  PROJECTS / ACHIEVEMENTS / AWARDS  ********************* -->
+  <section class="projects">
+    <div class="content-wrap divider">
+      <h2>PROJECTS / ACHIEVEMENTS / AWARDS</h2>
+     
+
+      <section class="project-item">
+        <img src="{% static 'img/thumbnail-2.jpg' %}">
+        <h3>PROJECTS</h3>
+        <h4>Factors militating against the use of online learning in the era of COVID-19 i
+          n University of Nigeria, Nsukka .</h4>
+        <h3>ACHIEVEMENTS / AWARDS</h3>
+        <h4> Awarded Best General Class representative   and social media influencer of the year, 
+              faculty of vocational and technical Education university of Nigeria,Nsukka  31st August 2019 </h4> 
+    </div>
+  </section>
+
+     <!-- ***********************  WORK EXPERIENCE  *********************** -->
+     <section class="work-experience">
+      <div class="content-wrap item-details divider">
+        <h2>Work Experience</h2>
+
+        <!-- Copy this whole <section> block to add more jobs. -->
+          <!-- job 1 -->
+        <section class="job-item">
+          <div class="job-details">
+            <h3>Operator</h3>
+            <p>BAGCO super sack Lagos Nigeria</p>
+            <p>2012- 2016</p>
+          </div>
+          <div class="job-summary">
+            <p>I operated the machines used in the production of sack bags and i also do 
+              paperworks of somes sales in the company</p>
+        
+          </div>
+        </section>
+         <!-- job 2 -->
+         <section class="job-item">
+          <div class="job-details">
+            <h3>Sales Executive</h3>
+            <p>Emma fabrics shop New Haven market Enugu Nigeria (holidays work)</p>
+            <p>2018-present</p>
+          </div>
+          <div class="job-summary">
+            <p>We sells different types of fabrics and assessories for cloth making</p>
+          </div>
+        </section>
+        <!-- job 3 -->
+        <section class="job-item">
+          <div class="job-details">
+            <h3>Networking engineer</h3> 
+             <p>ICT Center university of Nigeria Nsukka (internship)</p>
+            <p>6 Months</p>
+          </div>
+          <div class="job-summary">
+            <p>WE work as network enginner in the school</p>
+          </div>
+        </section>
+        <!-- End of Job block. -->
+       </div>
+    </section>
+    
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <footer>
+        <section id="contact">
+          <div class="contact-box-container">
+            <div class="contact-box">
+              <strong>Address</strong>
+              <p>New Haven, Enugu State</p>
+            </div>
+
+            <div class="contact-box">
+                <strong>Affiliates</strong>
+                <p>
+                  <b>HNG:</b>
+                  <a href="https://hng.tech/">https://hng.tech/</a>
+                </p>
+              </div>
+          </div>
+          <div class="container">
+            <form action="#">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="state">state</label>
+                </div>
+                <div class="col-75">
+                  <select id="state" name="state">
+                    <option value="Enugu">Enugu</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Ondo">Ondo</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+          <img src="https://hng.tech/img/brand-logo.png" alt="">
+        </section>
+      </footer>
+    </main>
+  </body>
+</html>

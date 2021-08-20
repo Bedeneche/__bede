@@ -1,0 +1,258 @@
+
+/* global styles 
+*****************************/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto Condensed;
+    font-size: 15px;
+    line-height: 1.5;
+}
+img {
+    width: 300px;
+}
+a {
+    color: #0d2730;
+}
+a:hover {
+    text-decoration: none;
+}
+h1 {
+    font-size: 100px;
+    line-height: 1;
+}
+h2 {
+    font-size: 45px;
+}
+h1, h2 {
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    margin: 0;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+h3 {
+    margin-bottom: 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
+.divider > section {
+    border-bottom: 1px dashed #34343434;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+/* Profile 
+*****************************/
+header {
+    background: #ffffff;
+    color: #0d2730;
+}
+.card{
+    max-width: 50%;
+    height: 50px;
+}
+
+
+
+/* Projects 
+*****************************/
+.projects {
+    background: #ffffff;
+}
+.projects a, h3, p {
+    color: #0d2730;
+}
+.projects .btn {
+    color: #0d2730;
+    background: #ffffff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects .btn:hover {
+    background: rgba(47, 48, 97, 80%);
+}
+.project-item h3, p {
+    color: #0d2730;
+}
+
+/* Work experience 
+*****************************/
+.work-experience {
+    background: #0d2730;
+}
+.work-experience h2, h3, p{
+    color: #ffffff;
+}
+
+/* Education
+*****************************/
+.edu {
+    background-color: #0d2730;
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+.edu h2,
+.edu h3,
+.edu p {
+    width: 60%;
+    color: #ffffff;
+}
+
+
+
+/* contact info
+*****************************/
+footer {
+    background: #ffffff;
+    color: #0d2730;
+}
+.contact-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 30px;
+}
+.contact-box{
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #e2e2e2;
+}
+.contact-box strong{
+    color: #2c2c2c;
+    font-size: 1.3rem;
+}
+.contact-box p{
+    color: #5c5c5c;
+    font-weight: 400;
+    margin: 10px;
+    text-align: center;
+}
+.contact-box p span{
+    color: #059bce;
+}
+.contact-box p{
+    color: #252525;
+}
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+/* Responsive layout
+*****************************/
+@media screen and (min-width:750px) {
+    header, footer {
+        text-align: center;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width:749px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}
